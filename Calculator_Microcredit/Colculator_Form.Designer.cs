@@ -40,6 +40,12 @@
             this.LastYearText = new System.Windows.Forms.TextBox();
             this.NextMonth = new System.Windows.Forms.Label();
             this.NextMonthText = new System.Windows.Forms.TextBox();
+            this.FirstBid = new System.Windows.Forms.TextBox();
+            this.SecondBid = new System.Windows.Forms.TextBox();
+            this.ThirdBid = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LoanText
@@ -85,7 +91,7 @@
             // FirstDays
             // 
             this.FirstDays.AutoSize = true;
-            this.FirstDays.Location = new System.Drawing.Point(77, 184);
+            this.FirstDays.Location = new System.Drawing.Point(94, 184);
             this.FirstDays.Name = "FirstDays";
             this.FirstDays.Size = new System.Drawing.Size(57, 13);
             this.FirstDays.TabIndex = 8;
@@ -93,7 +99,7 @@
             // 
             // CheckResultsBtn
             // 
-            this.CheckResultsBtn.Location = new System.Drawing.Point(263, 273);
+            this.CheckResultsBtn.Location = new System.Drawing.Point(214, 347);
             this.CheckResultsBtn.Name = "CheckResultsBtn";
             this.CheckResultsBtn.Size = new System.Drawing.Size(110, 48);
             this.CheckResultsBtn.TabIndex = 11;
@@ -114,7 +120,7 @@
             // LastYear
             // 
             this.LastYear.AutoSize = true;
-            this.LastYear.Location = new System.Drawing.Point(362, 184);
+            this.LastYear.Location = new System.Drawing.Point(393, 184);
             this.LastYear.Name = "LastYear";
             this.LastYear.Size = new System.Drawing.Size(50, 13);
             this.LastYear.TabIndex = 10;
@@ -131,7 +137,7 @@
             // NextMonth
             // 
             this.NextMonth.AutoSize = true;
-            this.NextMonth.Location = new System.Drawing.Point(221, 184);
+            this.NextMonth.Location = new System.Drawing.Point(237, 184);
             this.NextMonth.Name = "NextMonth";
             this.NextMonth.Size = new System.Drawing.Size(61, 13);
             this.NextMonth.TabIndex = 9;
@@ -144,11 +150,65 @@
             this.NextMonthText.Size = new System.Drawing.Size(100, 20);
             this.NextMonthText.TabIndex = 5;
             // 
+            // FirstBid
+            // 
+            this.FirstBid.Location = new System.Drawing.Point(77, 269);
+            this.FirstBid.Name = "FirstBid";
+            this.FirstBid.Size = new System.Drawing.Size(100, 20);
+            this.FirstBid.TabIndex = 12;
+            // 
+            // SecondBid
+            // 
+            this.SecondBid.Location = new System.Drawing.Point(224, 269);
+            this.SecondBid.Name = "SecondBid";
+            this.SecondBid.Size = new System.Drawing.Size(100, 20);
+            this.SecondBid.TabIndex = 13;
+            // 
+            // ThirdBid
+            // 
+            this.ThirdBid.Location = new System.Drawing.Point(365, 269);
+            this.ThirdBid.Name = "ThirdBid";
+            this.ThirdBid.Size = new System.Drawing.Size(100, 20);
+            this.ThirdBid.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(237, 243);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Days of Bid";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(100, 243);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Days of Bid";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(382, 243);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Days of Bid";
+            // 
             // Colculator_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ThirdBid);
+            this.Controls.Add(this.SecondBid);
+            this.Controls.Add(this.FirstBid);
             this.Controls.Add(this.CheckResultsBtn);
             this.Controls.Add(this.LastYear);
             this.Controls.Add(this.NextMonth);
@@ -182,6 +242,12 @@
         private System.Windows.Forms.Label NextMonth;
         private System.Windows.Forms.TextBox LastYearText;
         private System.Windows.Forms.TextBox NextMonthText;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox ThirdBid;
+        private System.Windows.Forms.TextBox SecondBid;
+        private System.Windows.Forms.TextBox FirstBid;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
 
