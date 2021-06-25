@@ -38,6 +38,8 @@
             this.FirstDays = new System.Windows.Forms.Label();
             this.NextMonth = new System.Windows.Forms.Label();
             this.LastYear = new System.Windows.Forms.Label();
+            this.CheckResultsBtn = new System.Windows.Forms.Button();
+            this.process1 = new System.Diagnostics.Process();
             this.SuspendLayout();
             // 
             // LoanText
@@ -122,11 +124,31 @@
             this.LastYear.TabIndex = 10;
             this.LastYear.Text = "Last year";
             // 
+            // CheckResultsBtn
+            // 
+            this.CheckResultsBtn.Location = new System.Drawing.Point(263, 273);
+            this.CheckResultsBtn.Name = "CheckResultsBtn";
+            this.CheckResultsBtn.Size = new System.Drawing.Size(110, 48);
+            this.CheckResultsBtn.TabIndex = 11;
+            this.CheckResultsBtn.Text = "Check results";
+            this.CheckResultsBtn.UseVisualStyleBackColor = true;
+            // 
+            // process1
+            // 
+            this.process1.StartInfo.Domain = "";
+            this.process1.StartInfo.LoadUserProfile = false;
+            this.process1.StartInfo.Password = null;
+            this.process1.StartInfo.StandardErrorEncoding = null;
+            this.process1.StartInfo.StandardOutputEncoding = null;
+            this.process1.StartInfo.UserName = "";
+            this.process1.SynchronizingObject = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CheckResultsBtn);
             this.Controls.Add(this.LastYear);
             this.Controls.Add(this.NextMonth);
             this.Controls.Add(this.FirstDays);
@@ -157,6 +179,8 @@
         private System.Windows.Forms.Label FirstDays;
         private System.Windows.Forms.Label NextMonth;
         private System.Windows.Forms.Label LastYear;
+        private System.Windows.Forms.Button CheckResultsBtn;
+        private System.Diagnostics.Process process1;
     }
 }
 
