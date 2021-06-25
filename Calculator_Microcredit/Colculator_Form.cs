@@ -43,9 +43,9 @@ namespace Calculator_Microcredit
             int ScndBid = Convert.ToInt32(SecondBid.Text);
             int ThrdBid = Convert.ToInt32(ThirdBid.Text);
 
-            double FirstDaysPersent = Loan * (FirstDays * FrstBid);
-            double NextMonthPersent = Loan * (NextMonth * ScndBid);
-            double LastYearPersent = Loan * (LastYear * ThrdBid);
+            double FirstDaysPersent = Loan * FirstDays * FrstBid;
+            double NextMonthPersent = Loan * NextMonth * ScndBid;
+            double LastYearPersent = Loan * LastYear * ThrdBid;
             double SumPercent = (FirstDaysPersent) + (NextMonthPersent) + (LastYearPersent);
             double PaymentAmount = SumPercent + Loan;
             double EffectiveBid = SumPercent / Loan / LoanPerDays;
