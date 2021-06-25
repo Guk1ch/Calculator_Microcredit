@@ -1,6 +1,6 @@
 ﻿namespace Calculator_Microcredit
 {
-    partial class Form1
+    partial class Colculator_Form
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -33,13 +33,13 @@
             this.LoanPerDaysText = new System.Windows.Forms.TextBox();
             this.LoanPerDays = new System.Windows.Forms.Label();
             this.FirstDaysText = new System.Windows.Forms.TextBox();
-            this.NextMonthText = new System.Windows.Forms.TextBox();
-            this.LastYearText = new System.Windows.Forms.TextBox();
             this.FirstDays = new System.Windows.Forms.Label();
-            this.NextMonth = new System.Windows.Forms.Label();
-            this.LastYear = new System.Windows.Forms.Label();
             this.CheckResultsBtn = new System.Windows.Forms.Button();
             this.process1 = new System.Diagnostics.Process();
+            this.LastYear = new System.Windows.Forms.Label();
+            this.LastYearText = new System.Windows.Forms.TextBox();
+            this.NextMonth = new System.Windows.Forms.Label();
+            this.NextMonthText = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // LoanText
@@ -77,52 +77,19 @@
             // 
             // FirstDaysText
             // 
-            this.FirstDaysText.Location = new System.Drawing.Point(80, 177);
+            this.FirstDaysText.Location = new System.Drawing.Point(77, 202);
             this.FirstDaysText.Name = "FirstDaysText";
             this.FirstDaysText.Size = new System.Drawing.Size(100, 20);
             this.FirstDaysText.TabIndex = 4;
             // 
-            // NextMonthText
-            // 
-            this.NextMonthText.Location = new System.Drawing.Point(224, 177);
-            this.NextMonthText.Name = "NextMonthText";
-            this.NextMonthText.Size = new System.Drawing.Size(100, 20);
-            this.NextMonthText.TabIndex = 5;
-            // 
-            // LastYearText
-            // 
-            this.LastYearText.Location = new System.Drawing.Point(365, 177);
-            this.LastYearText.Name = "LastYearText";
-            this.LastYearText.Size = new System.Drawing.Size(100, 20);
-            this.LastYearText.TabIndex = 6;
-            this.LastYearText.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
             // FirstDays
             // 
             this.FirstDays.AutoSize = true;
-            this.FirstDays.Location = new System.Drawing.Point(77, 161);
+            this.FirstDays.Location = new System.Drawing.Point(77, 184);
             this.FirstDays.Name = "FirstDays";
-            this.FirstDays.Size = new System.Drawing.Size(69, 13);
+            this.FirstDays.Size = new System.Drawing.Size(57, 13);
             this.FirstDays.TabIndex = 8;
-            this.FirstDays.Text = " First 15 days";
-            // 
-            // NextMonth
-            // 
-            this.NextMonth.AutoSize = true;
-            this.NextMonth.Location = new System.Drawing.Point(221, 161);
-            this.NextMonth.Name = "NextMonth";
-            this.NextMonth.Size = new System.Drawing.Size(61, 13);
-            this.NextMonth.TabIndex = 9;
-            this.NextMonth.Text = "Next month";
-            // 
-            // LastYear
-            // 
-            this.LastYear.AutoSize = true;
-            this.LastYear.Location = new System.Drawing.Point(362, 161);
-            this.LastYear.Name = "LastYear";
-            this.LastYear.Size = new System.Drawing.Size(50, 13);
-            this.LastYear.TabIndex = 10;
-            this.LastYear.Text = "Last year";
+            this.FirstDays.Text = " First  days";
             // 
             // CheckResultsBtn
             // 
@@ -132,6 +99,7 @@
             this.CheckResultsBtn.TabIndex = 11;
             this.CheckResultsBtn.Text = "Check results";
             this.CheckResultsBtn.UseVisualStyleBackColor = true;
+            this.CheckResultsBtn.Click += new System.EventHandler(this.CheckResultsBtn_Click);
             // 
             // process1
             // 
@@ -143,7 +111,40 @@
             this.process1.StartInfo.UserName = "";
             this.process1.SynchronizingObject = this;
             // 
-            // Form1
+            // LastYear
+            // 
+            this.LastYear.AutoSize = true;
+            this.LastYear.Location = new System.Drawing.Point(362, 184);
+            this.LastYear.Name = "LastYear";
+            this.LastYear.Size = new System.Drawing.Size(50, 13);
+            this.LastYear.TabIndex = 10;
+            this.LastYear.Text = "Last year";
+            // 
+            // LastYearText
+            // 
+            this.LastYearText.Location = new System.Drawing.Point(365, 202);
+            this.LastYearText.Name = "LastYearText";
+            this.LastYearText.Size = new System.Drawing.Size(100, 20);
+            this.LastYearText.TabIndex = 6;
+            this.LastYearText.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // NextMonth
+            // 
+            this.NextMonth.AutoSize = true;
+            this.NextMonth.Location = new System.Drawing.Point(221, 184);
+            this.NextMonth.Name = "NextMonth";
+            this.NextMonth.Size = new System.Drawing.Size(61, 13);
+            this.NextMonth.TabIndex = 9;
+            this.NextMonth.Text = "Next month";
+            // 
+            // NextMonthText
+            // 
+            this.NextMonthText.Location = new System.Drawing.Point(224, 202);
+            this.NextMonthText.Name = "NextMonthText";
+            this.NextMonthText.Size = new System.Drawing.Size(100, 20);
+            this.NextMonthText.TabIndex = 5;
+            // 
+            // Colculator_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -159,7 +160,7 @@
             this.Controls.Add(this.LoanPerDaysText);
             this.Controls.Add(this.Loan);
             this.Controls.Add(this.LoanText);
-            this.Name = "Form1";
+            this.Name = "Colculator_Form";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -174,13 +175,13 @@
         private System.Windows.Forms.TextBox LoanPerDaysText;
         private System.Windows.Forms.Label LoanPerDays;
         private System.Windows.Forms.TextBox FirstDaysText;
-        private System.Windows.Forms.TextBox NextMonthText;
-        private System.Windows.Forms.TextBox LastYearText;
         private System.Windows.Forms.Label FirstDays;
-        private System.Windows.Forms.Label NextMonth;
-        private System.Windows.Forms.Label LastYear;
         private System.Windows.Forms.Button CheckResultsBtn;
         private System.Diagnostics.Process process1;
+        private System.Windows.Forms.Label LastYear;
+        private System.Windows.Forms.Label NextMonth;
+        private System.Windows.Forms.TextBox LastYearText;
+        private System.Windows.Forms.TextBox NextMonthText;
     }
 }
 
